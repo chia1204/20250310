@@ -37,12 +37,12 @@ function draw() {
     textAlign(CENTER);
     textSize(30);
     fill(0);
-    text(`測驗結束！答對題數: ${correctAnswers}，答錯題數: ${incorrectAnswers}`, windowWidth / 2, windowHeight / 2);
+    text(`測驗結束！答對題數: ${correctAnswers}，答錯題數: ${incorrectAnswers}`, windowWidth / 2, windowHeight / 2+200);
   } else {
     // 顯示題目
     fill(0); // 題目顏色設置為黑色
     textSize(30);
-    text(questions.getString(currentQuestionIndex, 'question'), windowWidth / 2, windowHeight / 2 - 60);
+    text(questions.getString(currentQuestionIndex, 'question'), windowWidth / 2-80, windowHeight / 2 - 60);
     // 顯示結果
     fill(resultColor);
     text(resultText, windowWidth / 2, windowHeight / 2 + 150);
